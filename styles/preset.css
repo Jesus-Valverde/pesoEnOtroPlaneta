@@ -1,0 +1,77 @@
+/*Vars*/
+:root{
+    --white: #FFFFFF;
+    --yellow: #EEFB03;
+    --black: #000000;
+    --red: #FF3131;
+    --background: #FFFFFF10;
+    --field-background: #545454;
+
+    --extra-light: 200;
+    --light: 300;
+    --regular: 400;
+    --semi-bold: 600;
+    --bold: 700;
+    --extra-bold: 800;
+}
+
+.extra-light{
+    font-weight: var(--extra-light);
+}
+
+.light{
+    font-weight: var(--light);
+}
+
+.regular{
+    font-weight: var(--regular);
+}
+
+.semi-bold{
+    font-weight: var(--semi-bold);
+}
+
+.bold{
+    font-weight: var(--bold);
+}
+
+.extra-bold{
+    font-weight: var(--extra-bold);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.yellow-text{
+    color: var(--yellow);
+}
+
+.red-background{
+    background-color: var(--red);
+}
+
+.background-color{
+    background-color: var(--background);
+}
+
+.field-color{
+    background-color: #545454;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    input[type=number] { -moz-appearance:textfield; }
+
+
+    input[type=date]::-webkit-inner-spin-button,
+    input[type=date]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    input[type=date] { -moz-appearance:textfield; }

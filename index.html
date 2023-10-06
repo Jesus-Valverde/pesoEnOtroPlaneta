@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Calcula tu peso</title>
+    <link rel="stylesheet" href="styles/preset.css"/>
+    <link rel="stylesheet" href="styles/styles.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <div class="logo-container">
+                <img class="logo-image" src="images/logo.png" alt="stellar"/>
+                <span class="logo-text semi-bold">S P A C E</span>
+            </div>
+        </a>
+    </header>
+
+    <main>
+        <div class="form-background background-color">
+            <div class="astronaut-container">
+                <img class="astronaut" src="images/astronaut.png" alt="astronaut">
+            </div>
+            <section class="form-container">
+                <div class="form-header">
+                    <h1 class="form-title extra-bold">BIENVENIDO</h1>
+                    <h2 class="form-subtilte extra-bold yellow-text">EXPLORADOR</h2>
+                    <h3 class="form-text extra-light">Ingresa tus datos</h3>
+                </div>
+                <form id="formulario">
+                    <div class="input">
+                        <label class="form-label"for="nombre" id="nombre-label">NOMBRE</label>
+                        <input id="nombre" name="nombre" type="text" placeholder="INGRESA TU NOMBRE" required  class="field-color field"/>
+                    </div>
+                    <div class="input">
+                        <label class="form-label"for="edad" id="edad-label">EDAD</label>
+                        <input id="edad" name="edad" type="number" required min="18" max="120" placeholder="INGRESA TU EDAD" class="field-color field"/>
+                    </div>
+                    <div class="input">
+                        <label class="form-label"for="altura" id="altura-label">ALTURA</label>
+                            <input id="altura" name="altura" type="number" required min="50" max="210" placeholder="INGRESA TU ALTURA EN CM" class="field-color field"/>
+                    </div>
+                    <div class="input">
+                        <label class="form-label"for="peso" id="peso-label">PESO</label>
+                        <input id="peso" name="peso" type="number" required min="0" max="1000" placeholder="INGRESA TU PESO" class="field-color field"/>
+                    </div>
+                    <div class="button">
+                        <input class="red-background" type="submit" value="CALCULAR" id="submit" class="field-color field"/>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <script src="scripts/persona.js"></script>
+</body>
+</html>

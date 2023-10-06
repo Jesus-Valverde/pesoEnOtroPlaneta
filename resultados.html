@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Tu peso en otros planetas</title>
+    <link rel="stylesheet" href="styles/preset.css"/>
+    <link rel="stylesheet" href="styles/styles.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <div class="logo-container">
+                <img class="logo-image" src="images/logo.png" alt="stellar"/>
+                <span class="logo-text semi-bold">S P A C E</span>
+            </div>
+        </a>
+    </header>
+
+    <main>
+        <section class="top">
+            <div class="top-title">
+                <p class="top-h1 semi-bold">Este es tu peso en otros planetas</p>
+            </div>
+            <div class="top-data background-color">
+                <div class="user-data">
+                    <div class="username-container">
+                        <span class="username yellow-text extra-bold" id="nombre"></span>
+                    </div>
+                    <div class="fields-container">
+                        <div class="field-titles">
+                            <p class="field-title extra-bold">EDAD</p>
+                            <p class="field-title extra-bold">ALTURA</p>
+                            <p class="field-title extra-bold">PESO</p>
+                            <p class="field-title extra-bold">IMC</p>
+                        </div>
+                        <div class="field-spans">
+                            <div class="field-span-container">
+                                <span class="field-span light" id="edad"></span><span class="field-span"> años</span>
+                                </div>
+                            <div class="field-span-container">
+                                <span class="field-span light" id="altura"></span><span class="field-span"> cm</span>
+                                </div>
+                            <div class="field-span-container">
+                                <span class="field-span light" id="peso"></span><span class="field-span"> kg</span>
+                                </div>
+                            <div class="field-span-container">
+                                <span class="field-span light" id="IMC"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="planet">
+                    <img class="planet-icon" width="96" height="96" src="https://img.icons8.com/emoji/96/globe-showing-americas-emoji.png" alt="globe-showing-americas-emoji"/>
+                    <div class="planet-data">
+                        <span class="planet-title light" id="planetaTierra"></span>
+                        <div class="block">
+                            <span class="planet-field light" id="pesoEnPlanetaTierra"></span>
+                            <span> kg</span>
+                        </div>
+                        <div class="block">
+                            <span class="planet-field light" id="gravedadEnPlanetaTierra"></span>
+                            <span> m/s2</span>
+
+                        </div>
+                        <div class="block">
+                            <span class="planet-field light" id="clasificacionIMCEnTierra"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="resultados">
+            <div class="planet">
+                <img class="planet-icon" width="96" height="96" src="https://img.icons8.com/fluency/96/full-moon.png" alt="full-moon"/>
+                <div class="planet-data">
+                    <span class="planet-title light" id="planetaLuna"></span>
+                    <div class="block">
+                        <span class="planet-field light" id="pesoEnPlanetaLuna"></span>
+                        <span> kg</span>
+                    </div>
+                    <div class="block">
+                        <span class="planet-field light" id="gravedadEnPlanetaLuna"></span>
+                        <span> m/s2</span>
+                    </div>
+                    <div class="block">
+                        <span class="planet-field light" id="clasificacionIMCEnLuna"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="planet">
+                <img class="planet-icon" width="96" height="96" src="https://img.icons8.com/external-tulpahn-flat-tulpahn/96/external-mercury-space-tulpahn-flat-tulpahn.png" alt="external-mercury-space-tulpahn-flat-tulpahn"/>
+                <div class="planet-data">
+                    <span class="planet-title light" id="planetaMercurio"></span>
+                    <div class="block">
+                        <span class="planet-field light" id="pesoEnPlanetaMercurio"></span>
+                        <span> kg</span>
+                    </div>
+                    <div class="block">
+                        <span class="planet-field light" id="gravedadEnPlanetaMercurio"></span>
+                        <span> m/s2</span>
+                    </div>
+                    <div class="block">
+                        <span class="planet-field light" id="clasificacionIMCEnMercurio"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="planet">
+                <img class="planet-icon" width="96" height="96" src="https://img.icons8.com/external-tulpahn-flat-tulpahn/64/external-venus-space-tulpahn-flat-tulpahn.png" alt="external-venus-space-tulpahn-flat-tulpahn"/>
+                <div class="planet-data">
+                    <span class="planet-title light" id="planetaVenus"></span>
+                    <div class="block">
+                        <span class="planet-field light" id="pesoEnPlanetaVenus"></span>
+                        <span> kg</span>
+                    </div>
+                    <div class="block">
+                        <span class="planet-field light" id="gravedadEnPlanetaVenus"></span>
+                        <span> m/s2</span>
+                    </div>
+                    <div class="block">
+                        <span class="planet-field light" id="clasificacionIMCEnVenus"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="planet">
+                <img class="planet-icon" width="96" height="96" src="https://img.icons8.com/external-vitaliy-gorbachev-flat-vitaly-gorbachev/96/external-jupiter-space-vitaliy-gorbachev-flat-vitaly-gorbachev.png" alt="external-jupiter-space-vitaliy-gorbachev-flat-vitaly-gorbachev"/>
+                <div class="planet-data">
+                    <span class="planet-title light" id="planetaJupiter"></span>
+                    <div class="block">
+                        <span class="planet-field light" id="pesoEnPlanetaJupiter"></span>
+                        <span> kg</span>
+                    </div>
+                    <div class="block">
+                        <span class="planet-field light" id="gravedadEnPlanetaJupiter"></span>
+                        <span> m/s2</span>
+                    </div>
+                    <div class="block">
+                        <span class="planet-field light" id="clasificacionIMCEnJupiter"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="planet">
+                <img class="planet-icon" width="96" height="96" src="https://img.icons8.com/color/96/planet.png" alt="planet"/>
+                <div class="planet-data">
+                    <span class="planet-title light" id="planetaSaturno"></span>
+                    <div class="block">
+                        <span class="planet-field light" id="pesoEnPlanetaSaturno"></span>
+                        <span> kg</span>
+                    </div>
+                    <div class="block">
+                        <span class="planet-field light" id="gravedadEnPlanetaSaturno"></span>
+                        <span> m/s2</span>
+                    </div>
+                    <div class="block">
+                        <span class="planet-field light" id="clasificacionIMCEnSaturno"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="scripts/resultados.js"></script>
+
+</body>
+</html>
