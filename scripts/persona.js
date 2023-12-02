@@ -7,6 +7,7 @@ document.getElementById('formulario').addEventListener('submit', function(event)
     guardarDatos();
 
     // Redirige a la página de resultados
+    window.location.href = '/resultados.html';
 });
 
 // Función para guardar los datos en el almacenamiento local (localStorage)
